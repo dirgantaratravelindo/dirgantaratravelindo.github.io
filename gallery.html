@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/DT_logo.png" type="image/png">
+    <title>Gallery - Dirgantara Travelindo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="assets/images/DT_logo.png" alt="Dirgantara Travelindo" width="30" height="30"> Dirgantara Travelindo</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <!-- <li><a href="articles.html">Artikel</a></li> -->
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html" class="active">Tentang Kami</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+            <!-- <li><a href="booking.html" class="booking-btn">Booking</a></li> -->
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <section class="services-hero">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p class="subtitle">Kami siap membantu Anda merencanakan perjalanan impian</p>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <h1>Gallery Perjalanan Kami</h1>
+            <p>Momen indah dari perjalanan bersama TravelKu</p>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="bali">Bali</button>
+                <button class="filter-btn" data-filter="lombok">Lombok</button>
+                <button class="filter-btn" data-filter="jepang">Jepang</button>
+                <button class="filter-btn" data-filter="wisatawan">Wisatawan</button>
+            </div>
+        </div>
+
+        <div class="gallery-container">
+            <!-- Bali Images -->
+            <div class="gallery-item" data-category="bali">
+                <a href="assets/images/gallery/bali1.jpg" data-lightbox="gallery" data-title="Pantai Kuta - Bali">
+                    <img src="assets/images/gallery/noimage.jpg" alt="Bali Beach">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Pantai Kuta, Bali</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="gallery-item" data-category="bali">
+                <a href="assets/images/gallery/bali2.jpg" data-lightbox="gallery" data-title="Ubud Rice Terrace">
+                    <img src="assets/images/gallery/noimage.jpg" alt="Ubud">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Ubud Rice Terrace</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Lombok Images -->
+            <div class="gallery-item" data-category="lombok">
+                <a href="assets/images/gallery/lombok1.jpg" data-lightbox="gallery" data-title="Pantai Pink - Lombok">
+                    <img src="assets/images/gallery/noimage.jpg" alt="Lombok Beach">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Pantai Pink, Lombok</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="gallery-item" data-category="lombok">
+                <a href="assets/images/gallery/lombok2.jpg" data-lightbox="gallery" data-title="Gili Trawangan">
+                    <img src="assets/images/gallery/noimage.jpg" alt="Gili Islands">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Gili Trawangan</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Jepang Images -->
+            <div class="gallery-item" data-category="jepang">
+                <a href="assets/images/gallery/jepang1.jpg" data-lightbox="gallery" data-title="Mount Fuji - Jepang">
+                    <img src="assets/images/gallery/noimage.jpg" alt="Mount Fuji">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Mount Fuji, Jepang</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Wisatawan Images -->
+            <div class="gallery-item" data-category="wisatawan">
+                <a href="assets/images/gallery/traveler1.jpg" data-lightbox="gallery" data-title="Kelompok Wisatawan">
+                    <img src="assets/images/gallery/noimage.jpg" alt="Travel Group">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Happy Travelers</p>  
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Add more items as needed -->
+        </div>
+        
+        <div class="gallery-instagram">
+            <h3>Follow Instagram Kami</h3>
+            <p>Lihat lebih banyak momen di @dirgantara_travel</p>
+            <a href="https://www.instagram.com/dirgantara_travel/" class="instagram-btn" target="_blank">
+                <i class="fab fa-instagram"></i> @dirgantara_travel
+            </a>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Dirgantara Travelindo</h4>
+                <p>Travel agency terpercaya sejak 2023 dengan pengalaman melayani ribuan wisatawan.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/dirgantara_travel/"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a> -->
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Kontak</h4>
+                <p><i class="fas fa-map-marker-alt"></i> JL. Melaburi Perumahan Azhar Blok AE 1 No. 9 Kel. Kenten Kec. Talang kelapa Kab. Banyuasin, Provinsi Sumatera Selatan</p>
+                <p><i class="fas fa-phone"></i> 0881011010140 (Booking) dan 082279545874 (CS)</p>
+                <p><i class="fas fa-envelope"></i> dirgantaratravelindo@gmail.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Jam Operasional</h4>
+                <p>Senin - Jumat: 08.00 - 17.00</p>
+                <p>Sabtu: 08.00 - 15.00</p>
+                <p>Minggu & Hari Libur: Tutup</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dirgantara Travelindo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/62881011010140?text=Halo%20Dirgantara%20Travelindo,%20saya%20ingin%20bertanya%20tentang%20paket%20wisata" 
+        class="whatsapp-float" target="_blank">
+       <i class="fab fa-whatsapp"></i>
+        <span>Tanya Kami</span>
+    </a>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
