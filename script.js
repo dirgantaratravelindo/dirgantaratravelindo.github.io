@@ -117,3 +117,88 @@ window.addEventListener('resize', function() {
         }
     }
 });
+
+// Add this to your JavaScript file or in a <script> tag
+// Menu Mobile JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const body = document.body;
+    let isMenuOpen = false;
+    
+    // Create overlay jika belum ada
+    let overlay = document.querySelector('.nav-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'nav-overlay';
+        document.body.appendChild(overlay);
+    }
+    
+    // Toggle menu function
+    function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+        
+        // Toggle class active
+        navLinks.classList.toggle('active');
+        overlay.classList.toggle('active');
+        body.classList.toggle('menu-open');
+        
+        // Toggle hamburger icon
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+            if (isMenuOpen) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+    }
+    
+    // Event listeners
+    menuToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleMenu();
+    });
+    
+    // Close menu when clicking overlay
+    overlay.addEventListener('click', function() {
+        if (isMenuOpen) {
+            toggleMenu();
+        }
+    });
+    
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            if (isMenuOpen) {
+                toggleMenu();
+            }
+        });
+    });
+    
+    // Close menu with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && isMenuOpen) {
+            toggleMenu();
+        }
+    });
+    
+    // Close menu when clicking outside on mobile
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768 && isMenuOpen) {
+            // Jika klik di luar nav dan bukan di hamburger
+            if (!e.target.closest('nav') && !e.target.closest('.nav-links')) {
+                toggleMenu();
+            }
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && isMenuOpen) {
+            toggleMenu(); // Close menu ketika resize ke desktop
+        }
+    });
+});

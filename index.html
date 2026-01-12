@@ -35,19 +35,20 @@
 <body>
     <!-- Navigation (tetap pakai style.css) -->
    <nav>
-        <div class="logo"> <img src="assets/images/DT_logo.png" alt="Dirgantara Travelindo" width="30" height="30"> Dirgantara Travelindo</div>
+        <div class="logo"> <img src="assets/images/DT_logo.png" alt="Dirgantara Travelindo" width="30" height="30"> <a href="index.html" style="text-decoration: none; color: white;">Dirgantara Travelindo</a> </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Beranda</a></li>
             <li><a href="services.html">Layanan</a></li>
             <!-- <li><a href="articles.html">Artikel</a></li> -->
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html" class="active">Tentang Kami</a></li>
+            <!-- <li><a href="gallery.html">Gallery</a></li> -->
+            <li><a href="about.html" >Tentang Kami</a></li>
             <li><a href="contact.html">Kontak</a></li>
             <!-- <li><a href="booking.html" class="booking-btn">Booking</a></li> -->
         </ul>
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </div>
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
     <!-- Hero Section dengan class khusus index -->
@@ -65,14 +66,14 @@
             </div>
         </div>
         <div class="index-hero-stats">
-            <!-- <div class="index-stat">
-                <div class="index-stat-number">14+</div>
+            <div class="index-stat">
+                <div class="index-stat-number">3+</div>
                 <div class="index-stat-label">Tahun Pengalaman</div>
-            </div> -->
-            <!-- <div class="index-stat">
-                <div class="index-stat-number">50K+</div>
+            </div>
+            <div class="index-stat">
+                <div class="index-stat-number">100+</div>
                 <div class="index-stat-label">Penumpang Dilayani</div>
-            </div> -->
+            </div>
             <div class="index-stat">
                 <div class="index-stat-number">12+</div>
                 <div class="index-stat-label">Armada Terawat</div>
@@ -85,12 +86,12 @@
     </section>
 
     <!-- Tentang Kami Section dengan class khusus -->
-    <section class="index-about-section" id="about">
+    <!-- <section class="index-about-section" id="about">
         <div class="container">
             <div class="index-section-header">
                 <h2>Tentang Dirgantara Travelindo</h2>
                 <div class="index-underline"></div>
-                <p class="index-section-subtitle">Menghubungkan perjalanan Anda sejak 2010 dengan layanan terbaik</p>
+                <p class="index-section-subtitle">Menghubungkan perjalanan Anda sejak 2023 dengan layanan terbaik</p>
             </div>
             
             <div class="index-about-content">
@@ -136,9 +137,78 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="index-about-section" id="about">
+        <div class="container">
+            <div class="index-section-header">
+                <h2>Tentang Dirgantara Travelindo</h2>
+                <div class="index-underline"></div>
+                <p class="index-section-subtitle">Selalu memberikan pelayanan terbaik untuk kenyamanan Anda<br>
+                Menghubungkan perjalanan Anda sejak 2023 dengan layanan terbaik</p>
+            </div>
+            
+            <div class="index-about-content">
+                <div class="index-about-text">
+                    <h3>Dirgantara Travelindo: Mitra Perjalanan Antarkota Terpercaya</h3>
+                    <p>Dirgantara Travelindo didirikan pada tahun 2023 dengan visi memberikan layanan travel antarkota yang aman, nyaman, dan terjangkau bagi masyarakat Palembang dan sekitarnya.</p>
+                    
+                    <div class="index-about-points">
+                        <div class="index-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="point-content">
+                                <strong>Melayani ribuan penumpang setiap bulan</strong>
+                                <p class="point-desc">Pengalaman melayani kebutuhan perjalanan Anda</p>
+                            </div>
+                        </div>
+                        <div class="index-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="point-content">
+                                <strong>Armada terbaru dengan kondisi prima</strong>
+                                <p class="point-desc">Kendaraan terawat dan nyaman untuk perjalanan</p>
+                            </div>
+                        </div>
+                        <div class="index-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="point-content">
+                                <strong>Sopir berpengalaman dan profesional</strong>
+                                <p class="point-desc">Tim driver bersertifikat dan terlatih</p>
+                            </div>
+                        </div>
+                        <div class="index-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="point-content">
+                                <strong>Layanan 24/7 untuk pertanyaan dan bantuan</strong>
+                                <p class="point-desc">Siap membantu kapan saja Anda membutuhkan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="commitment-box">
+                        <h4>Komitmen Kami</h4>
+                        <p>Kami berkomitmen untuk terus memberikan pengalaman perjalanan terbaik dengan menjaga kualitas layanan, keamanan, dan kenyamanan penumpang sebagai prioritas utama.</p>
+                    </div>
+                    
+                    <div class="brand-tagline">
+                        <h3>DIRGANTARA TRAVELINDO</h3>
+                        <p>PARTNER TERBAIK PERJALANAN ANDA</p>
+                    </div>
+                </div>
+                
+                <div class="index-about-image">
+                    <img src="assets/images/DT_logo.png" alt="Dirgantara Travelindo" loading="lazy">
+                    <div class="index-image-overlay">
+                        <div class="index-overlay-content">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Keamanan & Kenyamanan</h4>
+                            <p>Prioritas utama dalam setiap perjalanan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Layanan Kami Section dengan class khusus -->
     <section class="index-services-section" id="services">
         <div class="container">
             <div class="index-section-header">
@@ -146,9 +216,33 @@
                 <div class="index-underline"></div>
                 <p class="index-section-subtitle">Pilih rute perjalanan yang sesuai dengan kebutuhan Anda</p>
             </div>
+            <div class="index-view-all-services">
+                <img src="assets/images/DT_Banner.png" alt="" width="800" height="auto" style="
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    border-radius: 10px;
+                    margin: 0 auto 20px;
+                    width: 100%;
+                    max-width: 800px;
+                "  loading="lazy"> <br>
+                <a href="services.html" class="index-view-all-btn">
+                    <i class="fas fa-list"></i> Lihat Semua Layanan
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="index-services-section" id="services">
+        <div class="container">
+            <div class="index-section-header">
+                <h2>Layanan Kami</h2>
+                <div class="index-underline"></div>
+                <p class="index-section-subtitle">Pilih rute perjalanan yang sesuai dengan kebutuhan Anda</p>
+            </div>
             
-            <div class="index-services-grid">
-                <!-- Service 1 -->
+            <div class="index-services-grid" id="serviceBlock">
+
+                
                 <div class="index-service-card">
                     <div class="index-service-icon">
                         <i class="fas fa-city"></i>
@@ -173,7 +267,7 @@
                     </a>
                 </div>
 
-                <!-- Service 2 -->
+               
                 <div class="index-service-card">
                     <div class="index-service-icon">
                         <i class="fas fa-tree"></i>
@@ -198,7 +292,7 @@
                     </a>
                 </div>
 
-                <!-- Service 3 -->
+               
                 <div class="index-service-card">
                     <div class="index-service-icon">
                         <i class="fas fa-mountain"></i>
@@ -221,9 +315,9 @@
                     <a href="#" class="index-service-book-btn" onclick="bookService('Palembang - Lampung', 250000)">
                         <i class="fas fa-calendar-alt"></i> Booking Sekarang
                     </a>
-                </div>
+                </div> 
 
-                <!-- Service 4 -->
+                
                 <div class="index-service-card featured">
                     <div class="index-featured-badge">Populer</div>
                     <div class="index-service-icon">
@@ -247,7 +341,7 @@
                     <a href="#" type="button" class="index-service-book-btn" onclick="bookService('Palembang - Bandung', 550000)">
                         <i class="fas fa-calendar-alt"></i> Booking Sekarang
                     </a>
-                </div>
+                </div> 
             </div>
             
             <div class="index-view-all-services">
@@ -256,7 +350,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Why Choose Us Section dengan class khusus -->
     <section class="index-why-choose-section">
@@ -322,7 +416,7 @@
                 <div class="index-testimonials">
                     <div class="index-testimonial">
                         <div class="index-testimonial-content">
-                            <p>"Perjalanan Palembang-Jakarta dengan TravelKu sangat nyaman. Armada bersih, sopir ramah, dan tepat waktu. Recommended!"</p>
+                            <p>"Perjalanan Palembang-Jakarta dengan Dirgantara Travelindo sangat nyaman. Armada bersih, sopir ramah, dan tepat waktu. Recommended!"</p>
                         </div>
                         <div class="index-testimonial-author">
                             <div class="index-author-avatar">
@@ -337,7 +431,7 @@
                     
                     <div class="index-testimonial">
                         <div class="index-testimonial-content">
-                            <p>"Sudah 3x pakai TravelKu ke Lampung. Pelayanan memuaskan, harga sesuai, dan yang penting aman sampai tujuan."</p>
+                            <p>"Sudah 3x pakai Dirgantara Travelindo ke Lampung. Pelayanan memuaskan, harga sesuai, dan yang penting aman sampai tujuan."</p>
                         </div>
                         <div class="index-testimonial-author">
                             <div class="index-author-avatar">
@@ -429,5 +523,6 @@
     <script src="script.js"></script>
     <script src="index.js"></script>
     <script src="services.js"></script>
+    
 </body>
 </html>
